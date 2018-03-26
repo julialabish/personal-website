@@ -1,0 +1,40 @@
+/* menu styles */
+
+.menu {
+    width: 100%;
+    float: right;
+}
+
+.menu li {
+    list-style-type: none;
+    float: left;
+}
+
+.menu a {
+    text-decoration: none;
+    padding-right: 73px;
+
+}
+
+/* About me styles */
+
+#about-me .personal-photo {
+    display: inline-block;
+    width: 49%;
+}
+
+#about-me .personal-details {
+    display: inline-block;
+    width: 49%;
+}
+
+#about-me .personal-details ul li {
+    width: 300px;
+}
+
+#about-me .personal-photo img {
+    width: 378px;
+}
+
+
+/* galery styles */

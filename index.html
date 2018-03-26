@@ -1,55 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Personal Website</title>
+    <link rel="stylesheet" href="index.css" type="text/css" />
 </head>
+
 <body>
-    <nav>
+    <nav class="menu">
         <ul>
             <li>
-                <a href="about-me">About Me</a>
+                <a href="#about-me">About Me</a>
             </li>
             <li>
-                <a href="travels">Travels</a>
+                <a href="#travels">Travels</a>
             </li>
             <li>
-                <a href="feedback">Feedback</a>
+                <a href="#travel-map">Travel Map</a>
             </li>
             <li>
-                <a href="follow-me">Follow Me</a>
+                <a href="#feedback">Feedback</a>
+            </li>
+            <li>
+                <a href="#follow-me">Follow Me</a>
             </li>
         </ul>
     </nav>
-    <h1>
-        Yuliia Labish
-    </h1>
-    <h4>About Me</h4>
-    <ul>
-        <li>
-                <a name="age">Age: 28 years old</a>
-            </li>
-            <li>
-                <a name="family">Family: Married and have 2 children</a>
-            </li>
-            <li>
-                <a name="education">Education: "Lviv Politechnic" National Univercity, Master's Degree</a>
-            </li>
-            <li>
-                <a name="home">Live: Lviv, Ukraine</a>
-            </li>
-            <li>
-                <a name="i-love">Love: Music, dansing and especially love traveling</a>
-            </li>
-        </ul>
-        <p>Glad to welcome you on my personal website!</p>
-        <p>I love new acquaintances and interesting travels.</p>
-        <p>I and my family visited the following countries in the past year:</p> 
-        <p>Costa Rica, Dominican Republic, Turkey, Poland and Egypt.</p>
-     </p>
-    
-    
+    <div id="about-me">
+        <div class="personal-photo">
+            <img src="personal-photo.jpg" alt="Yuliia Labish photo"></img>
+        </div>
+        <div class="personal-details">
+            <h3>Yuliia Labish</h3>
+            <ul>
+                <li>Age: 28 years old</li>
+                <li>Family: Married and have 2 children</li>
+                <li>Education: "Lviv Politechnic" National Univercity, Master's Degree</li>
+                <li>From: Lviv, Ukraine</li>
+                <li>Love: Music, dansing and especially love traveling</li>
+            </ul>
+            <div class="personal-details-text">
+                Glad to welcome you on my personal website! I love new acquaintances and interesting travels. I've visited the next countries in the past year: Costa Rica, Dominican Republic, Turkey, Poland and Egypt.
+            </div>
+        </div>
+    </div>
+    <div id="travels">
+        <div class="travel-card">
+            <img src="" alt="Photo from Costa Rica"></img>
+            <p>Travel to Costa Rica</p>
+            <button>See More</button>
+        </div>
+        <div class="travel-card">
+            <img src="" alt="Photo from Dominican Republic"></img>
+            <p>Travel to Dominican Republic</p>
+            <button>See More</button>
+        </div>
+        <div class="travel-card">
+            <img src="" alt="Photo from Turkey"></img>
+            <p>Travel to Turkey</p>
+            <button>See More</button>
+        </div>
+        <div class="travel-card">
+            <img src="" alt="Photo from Poland"></img>
+            <p>Travel to Poland</p>
+            <button>See More</button>
+        </div>
+        <div class="travel-card">
+            <img src="" alt="Photo from Egypt"></img>
+            <p>Travel to Egypt</p>
+            <button>See More</button>
+        </div>
+    </div>
+    <div id="travel-map">
+        <div class="travel-map-image">
+            <img src="" alt="My Travel Map"></img>
+        </div>
+        <div>
+            <p>Visited countries:</p>
+            <ul>
+                <li>Egypt</li>
+                <li>Poland</li>
+                <li>Turkey</li>
+                <li>Dominican Republic</li>
+                <li>Costa Rica</li>
+                <li>Slovakia</li>
+                <li>Spain</li>
+                <li>Greece</li>
+            </ul>
+        </div>
+    </div>
+    <div id="feedback">
+        <div class="feedback-form">
+            <form method="POST" action="https://formspree.io/julia.yeliseeva@gmail.com">
+                <input type="text" name="guest-name" placeholder="Your name*" required />
+                <br/>
+                <input type="email" name="guest-email" placeholder="Your email*" required />
+                <br/>
+                <textarea name="guest-message" placeholder="Your message" rows="5"></textarea>
+                <br/>
+                <input type="submit" value="Send" />
+            </form>
+        </div>
+    </div>
+    <div id="follow-me">
+        <span class="social-logo">
+            <a href="https://www.instagram.com/yulia_labish/"> 
+                <img src="" alt="Instagram logo"></img>
+            </a>
+        </span>
+        <span class="social-logo">
+            <a href="https://www.facebook.com/juliya.yeliseyeva.7"> 
+                <img src="" alt="Facebook logo"></img>
+            </a>
+        </span>
+        <span class="social-logo">
+            <a href="https://www.youtube.com/channel/UCPPXIizj4csM7QKlbCJvZVA?view_as=subscriber"> 
+                <img src="" alt="YouTube logo"></img>
+            </a>
+        </span>
+
+    </div>
+    <footer>© 2018 by Yuliia Labish.</footer>
 </body>
+
 </html>
